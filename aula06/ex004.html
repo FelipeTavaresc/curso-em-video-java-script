@@ -16,7 +16,11 @@
         var nome = window.prompt('Qual é o seu nome?')
         document.write(`Olá, ${nome} seu nome tem ${nome.length} letras <br>`)
         document.write(`Seu nome em maiúsculas é: ${nome.toUpperCase()} <br>`)
-        document.write(`Seu nome em minúsculas é: ${nome.toLowerCase()}`)
+        document.write(`Seu nome em minúsculas é: ${nome.toLowerCase()} <br>`)
+
+        //Exibir moeda
+        var n1 = 1545.50
+        document.write(n1.toLocaleString('pt-BR', {style: 'currency', currency:'BRL'}))
     </script>
 </body>
 </html>
